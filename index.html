@@ -12,7 +12,8 @@
 <style>
 :root{
   --blue:#0088cb;--blued:#00699e;--bluedd:#013a58;--blue2:#eaf5fb;
-  --red:#ed1c24;--yellow:#ffcb05;--wa:#25d366;--wad:#1da851;
+  --green:#7ab648;--greend:#5f9433;
+  --red:#7ab648;--yellow:#ffcb05;--wa:#25d366;--wad:#1da851;
   --ink:#14212f;--gray:#5a6675;--light:#f6fafc;--border:#e5edf3;--dark:#0a151f;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -32,7 +33,7 @@ nav.scrolled{box-shadow:0 8px 30px rgba(10,40,70,.1);}
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);padding:0 44px;display:flex;align-items:center;justify-content:space-between;height:72px;border-bottom:1px solid var(--border);}
 .nav-logo{display:flex;align-items:center;gap:11px;}
-.nav-logo img{height:44px;}
+.nav-logo img{height:40px;width:auto;}
 .nav-logo b{font-size:1.08rem;font-weight:800;color:var(--blued);letter-spacing:-.3px;}
 .nav-links{display:flex;gap:30px;align-items:center;}
 .nav-links a{color:var(--gray);font-size:.86rem;font-weight:600;transition:color .2s;}
@@ -206,7 +207,7 @@ section.blk{padding:88px 44px;}
 /* FOOTER */
 footer{background:#0a151f;padding:48px 44px 30px;}
 .ft-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px;}
-.ft-logo{height:42px;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.9;}
+.ft-logo{height:46px;margin-bottom:16px;background:#fff;padding:8px 12px;border-radius:10px;}
 .ft p,.ft a{font-size:.86rem;line-height:1.95;color:rgba(255,255,255,.58);font-weight:400;}
 .ft a:hover{color:var(--yellow);}
 .ft b.t{color:#fff;font-size:.9rem;display:block;margin-bottom:12px;font-weight:700;}
@@ -231,7 +232,7 @@ footer{background:#0a151f;padding:48px 44px 30px;}
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#top"><img src="img/logo.png" alt="Grupo NF"/><b>Grupo NF</b></a>
+  <a class="nav-logo" href="#top"><img src="img/logo.png" alt="Grupo NF"/></a>
   <div class="nav-links">
     <a href="#produtos">Produtos</a>
     <a href="#diferenciais">Diferenciais</a>
@@ -246,12 +247,12 @@ footer{background:#0a151f;padding:48px 44px 30px;}
   <div class="hero-inner">
     <div>
       <div class="hero-tag">A Gráfica nº1 do setor têxtil</div>
-      <h1>Gráfica <em>têxtil</em> em Brusque para a sua confecção</h1>
-      <p class="sub">Cartela de cores, cinta para rolo de malha, leque de tecido, tags e mostruários com produção própria — do pequeno ao grande pedido. Há mais de 25 anos ao lado da indústria têxtil.</p>
+      <h1>A gráfica <em>nº1</em> no setor têxtil</h1>
+      <p class="sub">Cartelas de cores, books de malha, fichários, leques de tecido, cinta para rolo de malha, tags e muito mais. Soluções para quem faz da indústria têxtil uma das maiores forças do Brasil.</p>
       <div class="hero-stats">
         <div class="hs"><div class="hs-val">+25</div><div class="hs-lbl">anos de mercado</div></div>
-        <div class="hs"><div class="hs-val">+1.000</div><div class="hs-lbl">confecções atendidas</div></div>
-        <div class="hs"><div class="hs-val">100<span>%</span></div><div class="hs-lbl">produção própria</div></div>
+        <div class="hs"><div class="hs-val">+1.000</div><div class="hs-lbl">empresas atendidas</div></div>
+        <div class="hs"><div class="hs-val">nº<span>1</span></div><div class="hs-lbl">no setor têxtil</div></div>
       </div>
       <div class="hero-cta-row">
         <a href="#form" class="btn-primary"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>Pedir orçamento</a>
@@ -267,17 +268,24 @@ footer{background:#0a151f;padding:48px 44px 30px;}
           <div class="hf-title">Peça seu orçamento</div>
           <div class="hf-sub">Retornamos rápido pelo WhatsApp</div>
           <div class="hf-field"><label>Seu nome</label><input type="text" name="nome" placeholder="Seu nome" required/></div>
-          <div class="hf-field"><label>Empresa</label><input type="text" name="empresa" placeholder="Nome da confecção / empresa"/></div>
+          <div class="hf-field"><label>Empresa</label><input type="text" name="empresa" placeholder="Nome da empresa"/></div>
           <div class="hf-field"><label>O que você precisa</label>
             <select name="produto" required>
               <option value="">Selecione o produto</option>
-              <option>Cartela de cores</option>
-              <option>Cinta para rolo de malha</option>
+              <option>Cartelas de cores (colagem direta)</option>
+              <option>Cartelas de cores (slip solto)</option>
+              <option>Book de tecido</option>
+              <option>Fichários</option>
               <option>Leque de tecido</option>
-              <option>Tags personalizadas</option>
-              <option>Lapela / etiqueta de composição</option>
-              <option>Sacolas personalizadas</option>
-              <option>Caixas / envelopes / encartes</option>
+              <option>Lapelas / cabides</option>
+              <option>Cinta para rolo de malha</option>
+              <option>Tags</option>
+              <option>Sacolas</option>
+              <option>Caixas</option>
+              <option>Envelopes</option>
+              <option>Pastas</option>
+              <option>Encartes</option>
+              <option>Agendas e calendários</option>
               <option>Texturização</option>
               <option>Outro</option>
             </select>
@@ -304,7 +312,7 @@ footer{background:#0a151f;padding:48px 44px 30px;}
   <div class="tstrip-in">
     <div class="tstrip-lbl">Feito para o têxtil</div>
     <div class="tstrip-list">
-      <span>Confecções</span><span>Malharias</span><span>Estamparias</span><span>Facções</span><span>Uniformes</span><span>Moda íntima</span><span>Moda praia</span>
+      <span>Malharias</span><span>Tinturarias</span><span>Fiações</span><span>Estamparias</span><span>Tecelagens</span>
     </div>
   </div>
 </div>
@@ -314,18 +322,18 @@ footer{background:#0a151f;padding:48px 44px 30px;}
   <div class="sec-inner">
     <div class="sec-center">
       <div class="sec-tag">O que produzimos</div>
-      <div class="sec-title" style="margin-bottom:10px;">Tudo para a sua <em>confecção</em></div>
-      <div class="sec-sub">Do mostruário que apresenta a coleção à etiqueta na peça — a Gráfica NF entrega o material gráfico completo da indústria têxtil.</div>
+      <div class="sec-title" style="margin-bottom:10px;">Tudo para a <em>indústria têxtil</em></div>
+      <div class="sec-sub">Do mostruário que apresenta a coleção à identificação do rolo de malha — a Gráfica NF entrega o material gráfico completo da indústria têxtil.</div>
     </div>
     <div class="pgrid">
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-cartela.jpg" alt="Cartela de cores" loading="lazy"/></div><div class="pcard-body"><h3>Cartela de cores</h3><p>Padrão Pantone e cores exclusivas para aprovar a coleção antes de produzir.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-cartela.jpg" alt="Cartela de cores" loading="lazy"/></div><div class="pcard-body"><h3>Cartela de cores</h3><p>Organiza e apresenta as opções de cores de uma coleção de forma prática e visual.</p></div></div>
       <div class="pcard"><div class="pcard-img"><img src="img/prod-cinta.jpg" alt="Cinta para rolo de malha" loading="lazy"/></div><div class="pcard-body"><h3>Cinta para rolo de malha</h3><p>Cintas personalizadas com a identificação e a marca da sua indústria.</p></div></div>
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-leque.jpg" alt="Leque de tecido" loading="lazy"/></div><div class="pcard-body"><h3>Leque de tecido</h3><p>Mostruários de tecido para apresentar sua linha de malhas e acabamentos.</p></div></div>
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-tags.jpg" alt="Tags personalizadas" loading="lazy"/></div><div class="pcard-body"><h3>Tags personalizadas</h3><p>Tags e etiquetas de marca — do modelo simples ao acabamento premium.</p></div></div>
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-lapela.jpg" alt="Lapela e etiqueta de composição" loading="lazy"/></div><div class="pcard-body"><h3>Lapela e composição</h3><p>Etiquetas de composição e lapelas conforme a norma, prontas pra costura.</p></div></div>
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-sacolas.jpg" alt="Sacolas personalizadas" loading="lazy"/></div><div class="pcard-body"><h3>Sacolas personalizadas</h3><p>Sacolas com a marca da sua loja ou confecção, para valorizar a entrega.</p></div></div>
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-caixas.jpg" alt="Caixas e envelopes" loading="lazy"/></div><div class="pcard-body"><h3>Caixas e envelopes</h3><p>Caixas, envelopes, encartes e pastas personalizados para os seus produtos.</p></div></div>
-      <div class="pcard"><div class="pcard-img"><img src="img/prod-textur.jpg" alt="Texturização" loading="lazy"/></div><div class="pcard-body"><h3>Texturização e mais</h3><p>Texturização gráfica, agendas, calendários e outros materiais sob medida.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-leque.jpg" alt="Leque de tecido" loading="lazy"/></div><div class="pcard-body"><h3>Leque de tecido</h3><p>Mostruários de tecido prático para apresentar seus artigos.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-tags.jpg" alt="Tags" loading="lazy"/></div><div class="pcard-body"><h3>Tags</h3><p>Tags e etiquetas de marca — do modelo simples ao acabamento premium.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-lapela.jpg" alt="Lapela / cabide para tecidos" loading="lazy"/></div><div class="pcard-body"><h3>Lapela / cabide</h3><p>Utilizada para apresentar e identificar tecidos e malhas diretamente no cabide, permitindo visualizar uma parte maior do tecido.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-sacolas.jpg" alt="Sacolas" loading="lazy"/></div><div class="pcard-body"><h3>Sacolas</h3><p>Sacolas com a marca da sua empresa, para valorizar a entrega.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-books.jpg" alt="Books e fichários" loading="lazy"/></div><div class="pcard-body"><h3>Books e fichários</h3><p>Books e fichários que reúnem e apresentam sua linha de tecidos com organização.</p></div></div>
+      <div class="pcard"><div class="pcard-img"><img src="img/prod-textur.jpg" alt="Texturização" loading="lazy"/></div><div class="pcard-body"><h3>Texturização e mais</h3><p>Acabamento que cria relevos e efeitos táteis no papel, agregando textura, sofisticação e destaque à apresentação.</p></div></div>
     </div>
   </div>
 </section>
@@ -334,7 +342,7 @@ footer{background:#0a151f;padding:48px 44px 30px;}
 <section class="num-bg">
   <div class="num-grid">
     <div class="num-item"><div class="num-val">+25</div><div class="num-lbl">anos no<br/>setor têxtil</div></div>
-    <div class="num-item"><div class="num-val">+1.000</div><div class="num-lbl">confecções<br/>atendidas</div></div>
+    <div class="num-item"><div class="num-val">+1.000</div><div class="num-lbl">empresas<br/>atendidas</div></div>
     <div class="num-item"><div class="num-val">nº<span>1</span></div><div class="num-lbl">gráfica do<br/>setor têxtil</div></div>
     <div class="num-item"><div class="num-val">100<span>%</span></div><div class="num-lbl">produção<br/>própria</div></div>
   </div>
@@ -346,17 +354,17 @@ footer{background:#0a151f;padding:48px 44px 30px;}
     <div class="sec-head">
       <div>
         <div class="sec-tag">Por que o Grupo NF</div>
-        <div class="sec-title">A gráfica que fala a<br/><em>língua da confecção</em></div>
+        <div class="sec-title">A gráfica que fala a<br/><em>língua do têxtil</em></div>
       </div>
       <div class="sec-sub">Não somos uma gráfica genérica que também faz têxtil. Nascemos no setor têxtil — e é isso que a gente faz de melhor há mais de 25 anos.</div>
     </div>
     <div class="dif-grid">
-      <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div class="dif-title">Especialista no têxtil há +25 anos</div><div class="dif-desc">Referência nacional em gráfica para a indústria têxtil. Entendemos coleção, cartela, composição e o prazo de quem produz roupa.</div></div>
-      <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/></svg></div><div class="dif-title">Produção própria</div><div class="dif-desc">Controle total de prazo e qualidade. O que você aprova na amostra é exatamente o que chega na sua confecção.</div></div>
+      <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div class="dif-title">Especialista no têxtil há +25 anos</div><div class="dif-desc">Referência nacional em gráfica para a indústria têxtil. Entendemos coleção, cartela, mostruário e o prazo de quem produz tecido e malha.</div></div>
+      <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/></svg></div><div class="dif-title">Produção própria</div><div class="dif-desc">Controle total de prazo e qualidade. O que você aprova na amostra é exatamente o que chega na sua empresa.</div></div>
       <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="dif-title">Do pequeno ao grande pedido</div><div class="dif-desc">Estrutura para atender desde poucas unidades até grandes tiragens — ideal pra quem está começando ou escalando a marca.</div></div>
       <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="dif-title">Aprove as cores antes</div><div class="dif-desc">Cartela e amostra para você validar cor e acabamento antes da produção. Sem surpresa na entrega.</div></div>
       <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="dif-title">Agilidade de verdade</div><div class="dif-desc">Orçamento rápido pelo WhatsApp e produção sem enrolação. Prazo combinado é prazo cumprido.</div></div>
-      <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><div class="dif-title">Entrega para todo o Brasil</div><div class="dif-desc">Sediados em Brusque/SC, no coração do polo têxtil, produzimos e enviamos para confecções de todo o país.</div></div>
+      <div class="dif-card"><div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><div class="dif-title">Entrega para todo o Brasil</div><div class="dif-desc">Sediados em Brusque/SC, no coração do polo têxtil, produzimos e enviamos para empresas de todo o país.</div></div>
     </div>
   </div>
 </section>
@@ -369,11 +377,11 @@ footer{background:#0a151f;padding:48px 44px 30px;}
       <div>
         <div class="sec-tag">Acabamento premium</div>
         <div class="sec-title" style="margin-bottom:14px;">Cada detalhe valoriza<br/><em>a sua marca</em></div>
-        <div class="sec-sub" style="margin-bottom:4px;">Do papel ao dourado, cuidamos do acabamento para que o seu material represente a qualidade da sua confecção. Produção própria em Brusque/SC — o que você aprova é exatamente o que chega.</div>
+        <div class="sec-sub" style="margin-bottom:4px;">Oferecemos o serviço de texturização gráfica, um acabamento diferenciado que valoriza seus materiais com sofisticação e personalidade. Trabalhamos com uma variedade de texturas prontas, que agregam valor ao impresso, além da possibilidade de desenvolver texturas exclusivas, criadas sob medida para refletir a identidade da sua marca.</div>
         <ul class="estr-list">
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Produção própria, sem terceirizar o seu pedido</li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Opções de acabamento: hot stamping, verniz, relevo e mais</li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Amostra pra você aprovar antes da produção em escala</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Texturas prontas ou exclusivas, sob medida para a sua marca</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Relevos e efeitos táteis em convites, embalagens, tags e capas</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Transforma o toque em uma experiência visual e tátil única</li>
         </ul>
       </div>
     </div>
@@ -384,7 +392,7 @@ footer{background:#0a151f;padding:48px 44px 30px;}
 <section class="stmt">
   <div class="stmt-in">
     <span class="qmark">&ldquo;</span>
-    <h2>Há mais de 25 anos ajudamos confecções a apresentar suas coleções com a <em>qualidade que elas merecem</em>.</h2>
+    <h2>Há mais de 25 anos ajudamos malharias e tinturarias a apresentar suas coleções com a <em>qualidade que elas merecem</em>.</h2>
     <div class="attr">Grupo NF · Referência no setor têxtil</div>
   </div>
 </section>
@@ -397,10 +405,10 @@ footer{background:#0a151f;padding:48px 44px 30px;}
       <div class="sec-title" style="margin-bottom:0;">Do orçamento à entrega, sem complicação</div>
     </div>
     <div class="proc-steps">
-      <div class="proc-step"><div class="proc-num">01</div><div class="proc-title">Conte o que precisa</div><div class="proc-desc">Envie o produto e a quantidade pelo formulário ou direto no WhatsApp.</div></div>
-      <div class="proc-step"><div class="proc-num">02</div><div class="proc-title">Receba o orçamento</div><div class="proc-desc">Retornamos rápido com valor, prazo e as opções de acabamento.</div></div>
-      <div class="proc-step"><div class="proc-num">03</div><div class="proc-title">Aprove a amostra</div><div class="proc-desc">Você valida cor e acabamento antes de a gente produzir em escala.</div></div>
-      <div class="proc-step"><div class="proc-num">04</div><div class="proc-title">Produção e entrega</div><div class="proc-desc">Produzimos e entregamos na sua confecção, em Brusque ou em todo o Brasil.</div></div>
+      <div class="proc-step"><div class="proc-num">01</div><div class="proc-title">Conte o que precisa</div><div class="proc-desc">Nos informe o material de interesse e a quantidade pelo formulário ou direto no WhatsApp.</div></div>
+      <div class="proc-step"><div class="proc-num">02</div><div class="proc-title">Receba o orçamento</div><div class="proc-desc">Entendemos a sua necessidade e retornamos com orçamento e prazo de produção.</div></div>
+      <div class="proc-step"><div class="proc-num">03</div><div class="proc-title">Aprove e produza</div><div class="proc-desc">Orçamento aprovado, iniciamos a produção do seu material.</div></div>
+      <div class="proc-step"><div class="proc-num">04</div><div class="proc-title">Entrega</div><div class="proc-desc">Entrega em todo o Brasil, por nossos motoristas e transportadoras.</div></div>
     </div>
   </div>
 </section>
@@ -413,17 +421,14 @@ footer{background:#0a151f;padding:48px 44px 30px;}
         <div class="sec-tag">Quem atendemos</div>
         <div class="sec-title">Especialistas no<br/><em>seu segmento</em></div>
       </div>
-      <div class="sec-sub">Cada nicho do têxtil tem sua exigência. A Gráfica NF conhece as particularidades de quem produz roupa e opera dentro delas.</div>
+      <div class="sec-sub">Cada elo da cadeia têxtil tem sua exigência. A Gráfica NF conhece as particularidades de quem produz fio, tecido e malha e opera dentro delas.</div>
     </div>
-    <div class="seg-grid">
-      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div><div class="seg-name">Confecções</div></div>
+    <div class="seg-grid" style="grid-template-columns:repeat(5,1fr);">
       <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84Z"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/></svg></div><div class="seg-name">Malharias</div></div>
+      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="seg-name">Tinturarias</div></div>
+      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg></div><div class="seg-name">Fiações</div></div>
       <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".8" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".8" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".8" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".8" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.6-.7 1.6-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.4-.6-.4-1.1a1.6 1.6 0 0 1 1.6-1.6H16c3 0 5.5-2.5 5.5-5.5C21.5 6 17.5 2 12 2z"/></svg></div><div class="seg-name">Estamparias</div></div>
-      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div><div class="seg-name">Facções</div></div>
-      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div><div class="seg-name">Uniformes</div></div>
-      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div><div class="seg-name">Moda íntima</div></div>
-      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div><div class="seg-name">Moda praia</div></div>
-      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div><div class="seg-name">Jeanswear</div></div>
+      <div class="seg-card"><div class="seg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18M7 3v18M17 3v18"/></svg></div><div class="seg-name">Tecelagens</div></div>
     </div>
   </div>
 </section>
@@ -432,7 +437,7 @@ footer{background:#0a151f;padding:48px 44px 30px;}
 <section class="cta-final">
   <div class="cta-final-in">
     <div class="sec-tag" style="margin-bottom:18px;">Próximo passo</div>
-    <h2>Pronto para o material gráfico<br/><em>que a sua confecção merece?</em></h2>
+    <h2>Pronto para o material gráfico<br/><em>que a sua empresa merece?</em></h2>
     <p>Peça seu orçamento agora e fale com quem entende de têxtil há mais de 25 anos.</p>
     <div class="cta-row">
       <a href="#" onclick="return waDirect()" class="btn-primary" style="font-size:1rem;padding:16px 34px;"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>Pedir orçamento no WhatsApp</a>
@@ -446,7 +451,7 @@ footer{background:#0a151f;padding:48px 44px 30px;}
   <div class="ft-in">
     <div class="ft">
       <img src="img/logo.png" class="ft-logo" alt="Grupo NF"/>
-      <p>A Gráfica nº1 do setor têxtil. Há mais de 25 anos em Brusque/SC produzindo material gráfico para confecções, malharias e estamparias de todo o Brasil.</p>
+      <p>A Gráfica nº1 do setor têxtil. Há mais de 25 anos em Brusque/SC produzindo material gráfico para malharias, tinturarias, fiações e estamparias de todo o Brasil.</p>
     </div>
     <div class="ft">
       <b class="t">Contato</b>
